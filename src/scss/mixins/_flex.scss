@@ -1,0 +1,45 @@
+@mixin flex {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+@mixin flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@mixin flex-v-center {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+@mixin flex-h-center {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@mixin flex-all-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flex-vertical-start {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+@mixin flex-vertical-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@mixin flexBox($justifyContent, $alignItems) {
+	display: flex;
+	justify-content: $justifyContent;
+	align-items: $alignItems;
+}

@@ -1,0 +1,57 @@
+@import "../../../scss/variables.scss";
+@import "../../../scss/mixins/mixins.scss";
+
+.promo {
+	background-image: url(../../../assets/images/promo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.promo__inner {
+	@include flex-vertical-center;
+	min-height: 100vh;
+	text-align: center;
+	padding-top: 100px;
+
+	.title {
+		font-family: "Impact";
+		font-weight: 400;
+		font-style: normal;
+		font-size: 76px;
+		letter-spacing: 0.02em;
+		color: $blackColor;
+		align-self: center;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+
+	.subtitle {
+		font-family: "Impact";
+		font-weight: 400;
+		font-style: normal;
+		font-size: 48px;
+		color: $blackColor;
+		border-bottom: 1px solid $blackColor;
+		align-self: center;
+		margin-bottom: 10px;
+		span {
+			display: block;
+			font-size: 34px;
+			line-height: 1;
+			text-align: center;
+			color: $goldColor;
+			padding: 10px 0;
+		}
+	}
+	.promo__text {
+		font-size: 16px;
+		color: $darkGreyColor;
+		margin-bottom: 10px;
+	}
+	.promo__arrow {
+		margin-top: auto;
+		margin-bottom: 30px;
+		align-self: center;
+	}
+}

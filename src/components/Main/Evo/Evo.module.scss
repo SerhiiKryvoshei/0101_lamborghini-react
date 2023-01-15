@@ -1,0 +1,135 @@
+@import "../../../scss/variables.scss";
+@import "../../../scss/mixins/mixins.scss";
+
+.evo {
+	font-size: 14px;
+	padding-bottom: 100px;
+
+	.boxBlack {
+		background-color: $darkGreyColor;
+		color: $whiteColor;
+		padding: 100px 0 50px;
+
+		.blackInner {
+			position: relative;
+
+			&::before {
+				content: "";
+				background-image: url(../../../assets/images/decor-1.svg);
+				position: absolute;
+				width: 185px;
+				height: 213px;
+				top: 210px;
+				left: -130px;
+			}
+			&::after {
+				content: "";
+				background-image: url(../../../assets/images/decor-2.svg);
+				position: absolute;
+				width: 498px;
+				height: 572px;
+				top: 290px;
+				left: -40px;
+			}
+
+			.blackInfo {
+				@include flexBox(space-between, flex-start);
+
+				.blackInfoBox {
+					flex-basis: 437px;
+				}
+			}
+
+			.pic {
+				display: block;
+				margin: 170px auto 60px;
+				position: relative;
+				z-index: 1;
+			}
+		}
+	}
+
+	.boxWhite {
+		.whiteInner {
+			padding-top: 125px;
+			position: relative;
+
+			&::before {
+				content: "";
+				background-image: url(../../../assets/images/decor-3.png);
+				position: absolute;
+				width: 274px;
+				height: 257px;
+				top: -40px;
+				left: 360px;
+			}
+			&::after {
+				content: "";
+				background-image: url(../../../assets/images/decor-4.png);
+				position: absolute;
+				width: 324px;
+				height: 311px;
+				top: 115px;
+				left: 600px;
+			}
+
+			.text:first-child {
+				max-width: 285px;
+			}
+
+			.text:nth-child(2) {
+				max-width: 374px;
+			}
+
+			.text:nth-child(3) {
+				max-width: 590px;
+				padding-bottom: 100px;
+			}
+
+			.video {
+				background-image: url(../../../assets/images/evo-video.png);
+				// padding-top: 70px;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				height: 264px;
+				@include flex-all-center;
+				text-align: center;
+
+				span {
+					display: block;
+					color: $whiteColor;
+				}
+			}
+
+			.pic {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.title {
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 32px;
+	text-transform: uppercase;
+	padding-right: 50px;
+}
+
+.text {
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	padding-bottom: 30px;
+}
+
+.descrList {
+	@include flex-h-center;
+	gap: 0 65px;
+
+	dd {
+		text-transform: uppercase;
+	}
+}

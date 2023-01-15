@@ -1,0 +1,29 @@
+{
+	"extends": [
+		"react-app",
+		"react-app/jest"
+	],
+	"rules": {
+		"no-console": "warn",
+		"prefer-const": "error",
+		"semi": [
+			"warn",
+			"always"
+		],
+		"import/order": [
+			"error",
+			{
+				"groups": [
+					"builtin",
+					"external",
+					"internal",
+					"parent",
+					"sibling",
+					"index",
+					"object",
+					"type"
+				]
+			}
+		]
+	}
+}

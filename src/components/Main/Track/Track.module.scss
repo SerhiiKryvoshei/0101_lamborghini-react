@@ -1,0 +1,32 @@
+@import "../../../scss/variables.scss";
+@import "../../../scss/mixins/mixins.scss";
+
+.track {
+	background-image: url(../../../assets/images/track-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.inner {
+		@include flex-vertical-start;
+		min-height: 100vh;
+	}
+
+	.title {
+		font-family: "Roboto Condensed", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+		font-size: 32px;
+		text-transform: uppercase;
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+
+	.text {
+		max-width: 435px;
+	}
+
+	.pic {
+		margin: auto auto 90px auto;
+	}
+}

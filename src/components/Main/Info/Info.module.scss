@@ -1,0 +1,79 @@
+@import "../../../scss/variables.scss";
+@import "../../../scss/mixins/mixins.scss";
+
+.info {
+	margin-bottom: 100px;
+
+	.part {
+		@include flexBox(space-between, flex-start);
+		padding-top: 100px;
+
+		&.modifierFirst {
+			display: block;
+		}
+
+		&.modifierThird {
+			padding-top: 66px;
+		}
+
+		.title {
+			font-family: "Roboto Condensed", sans-serif;
+			font-weight: 300;
+			font-style: normal;
+			font-size: 32px;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+
+		.textbox {
+			@include flexBox(space-between, flex-start);
+			gap: 0 20px;
+		}
+
+		.text {
+			font-family: "Roboto Condensed", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			font-size: 14px;
+			flex-basis: 50%;
+			margin-bottom: 30px;
+		}
+
+		.modifierBold {
+			font-weight: 700;
+		}
+
+		.content {
+			flex-basis: 415px;
+		}
+
+		.pic {
+			object-fit: cover;
+		}
+	}
+}
+
+.partSecond .text {
+	max-width: 352px;
+}
+
+.partThird .text {
+	max-width: 377px;
+}
+
+.table {
+	flex-basis: 450px;
+	border-bottom: 1px solid $blackColor;
+	position: relative;
+	top: 20px;
+	td {
+		padding-bottom: 20px;
+	}
+	&::before {
+		content: "";
+		border-top: 1px solid $blackColor;
+		position: absolute;
+		width: 100%;
+		top: -20px;
+	}
+}
