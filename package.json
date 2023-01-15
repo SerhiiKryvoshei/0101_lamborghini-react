@@ -1,6 +1,7 @@
 {
 	"name": "lamborghini-react",
 	"version": "0.1.0",
+	"homepage": "https://serhiikryvoshei.github.io/ 0101_lamborghini-react",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
@@ -14,6 +15,8 @@
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
@@ -34,6 +37,7 @@
 		]
 	},
 	"devDependencies": {
+		"gh-pages": "^4.0.0",
 		"sass": "^1.57.1"
 	}
 }
