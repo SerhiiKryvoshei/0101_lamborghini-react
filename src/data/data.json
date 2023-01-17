@@ -124,6 +124,30 @@
 		}
 	},
 	"Footer": {
-		"title": "Контакты"
+		"title": "Контакты",
+		"boxFirst": {
+			"title": "ОБЩИЕ",
+			"rowOne": "+(351) 282 405 600",
+			"rowOneHref": "tel:+351282405600",
+			"rowTwo": "+(351) 282 405 697",
+			"rowTwoHref": "tel:+351282405697",
+			"rowThree": "info@autodromodoalgarve.com",
+			"rowThreeHref": "mailto:info@autodromodoalgarve.com"
+		},
+		"boxSecond": {
+			"title": "БИЛЕТЫ",
+			"rowOne": "+(351) 282 405 600",
+			"rowOneHref": "tel:+351282405600",
+			"rowTwo": "+(351) 282 405 697",
+			"rowTwoHref": "tel:+351282405697",
+			"rowThree": "tickets@autodromodoalgarve.com",
+			"rowThreeHref": "mailto:tickets@autodromodoalgarve.com"
+		},
+		"boxThird": {
+			"title": "АДРЕС",
+			"text": "Sitio do Escampadinho, Mexilhoeira Grande, 8500-148 Portimao, Portugal"
+		},
+		"design": "Design by Varvara Prokopchuk",
+		"privacy": "Политика конфиденциальности"
 	}
 }

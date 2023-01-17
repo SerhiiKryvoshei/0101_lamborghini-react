@@ -2,5 +2,63 @@
 @import "../../scss/mixins/mixins.scss";
 
 .footer {
+	padding: 100px 0 80px;
 	background-color: $blackColor;
+	color: $whiteColor;
+
+	.title {
+		font-family: "Roboto Condensed", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+		font-size: 32px;
+		text-transform: uppercase;
+		padding-bottom: 50px;
+	}
+	.subtitle {
+		font-family: "Roboto Condensed", sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 16px;
+		text-transform: uppercase;
+		padding-bottom: 20px;
+	}
+	.text {
+		font-family: "Roboto Condensed", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 16px;
+		padding-bottom: 10px;
+	}
+	.textSmall {
+		font-size: 14px;
+	}
+
+	.top {
+		@include flexBox(space-between, flex-start);
+		gap: 0 20px;
+
+		.info {
+			list-style: none;
+
+			.infoItem {
+				padding-bottom: 40px;
+			}
+			.social {
+				list-style: none;
+				@include flex;
+				gap: 0 20px;
+			}
+		}
+		.address {
+			flex-basis: 462px;
+		}
+	}
+
+	.bottom {
+		@include flexBox(space-between, center);
+	}
+}
+
+#map {
+	height: 250px;
 }
